@@ -19,9 +19,11 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    domain: 192.168.49.2.nip.io
+    kind: ingress
     namespaceSubDomain: -jx.
+    customHosts:
+      hook:  https://f419-84-46-53-63.ngrok.io
     tls:
       email: ""
       enabled: false
